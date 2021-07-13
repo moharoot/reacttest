@@ -1,0 +1,31 @@
+// Colors
+$bluish: #1e7cdc;
+$lighterBlue: #44b0f0;
+$light: #ffffff;
+$dark:rgb(31, 31, 31);
+$greenish:rgb(97, 199, 71); 
+$goldish:rgb(220,160,0);
+$tomato: rgb(244, 57, 86);
+
+// Breakpoints
+$desktop: 992px;
+$tablet: 768px;
+$small-sc: 400px;
+
+@mixin desktop {
+    @media (max-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin small-sc {
+    @media (max-width: #{$small-sc}) {
+        @content;
+    }
+}
